@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background video styles */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Keeps the video in the background */
+    object-fit: cover; /* Ensures video covers the screen */
+    opacity: 0.5; /* Adds transparency to the video */
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7); /* Adds slight background color for readability */
+    color: #3c1717;
+    position: relative;
+    z-index: 1; /* Keeps content above video */
+}
+
+/* Header */
+header {
+    background-color: #3bafa2;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 4px rgba(190, 4, 4, 0.83);
+}
+
+/* Main Sections */
+h1, h2 {
+    margin-bottom: 1.5rem;
+}
+
+/* Form Section */
+.form-section, .summary-section, .table-section {
+    background-color: rgb(170, 154, 154);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(20, 148, 150, 0.878);
+    opacity: 0.8;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ac2323;
+    border-radius: 4px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons button {
+    padding: 0.7rem 1rem;
+    border: none;
+    background-color: #0cca12;
+    color: rgb(78, 18, 18);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.form-buttons button:hover {
+    background-color: #1a6b20;
+}
+
+/* Summary Section */
+.summary-section {
+    text-align: center;
+}
+
+.summary-section div {
+    margin-bottom: 0.5rem;
+}
+
+.summary-section strong {
+    font-size: 1.2rem;
+}
+
+/* Table Section */
+.table-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-section th, .table-section td {
+    padding: 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #641515;
+}
+
+.table-section th {
+    background-color: #f4f4f4;
+}
+
+.table-section td {
+    background-color: #f9f8f8;
+}
+
+.table-section tr:hover {
+    background-color: #efeaea;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #068881;
+    color: rgb(25, 10, 10);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-section, .summary-section, .table-section {
+        width: 95%;
+    }
+}
